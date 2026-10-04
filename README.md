@@ -24,6 +24,14 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
+## Deploying to Netlify
+
+The site deploys on Netlify from `netlify.toml` (build command `pnpm build`, Netlify's Next.js runtime). Set these environment variables in the Netlify project, never in the repo:
+
+- `CIRCLE_API_TOKEN` (required): Circle admin API token used by the newsletter sign-up. Without it the form reports that sign-ups are unavailable.
+- `CIRCLE_NEWSLETTER_SPACE_ID` (optional): Circle space new members are added to.
+- `NEXT_PUBLIC_CIRCLE_COMMUNITY_URL` (optional): defaults to `https://stormproof.circle.so`.
+
 ## Learn More
 
 To learn more, take a look at the following resources:
