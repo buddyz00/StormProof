@@ -6,13 +6,13 @@ export function About() {
   return (
     <section id="about" aria-labelledby="about-heading" className="scroll-mt-20 bg-secondary">
       <div className="mx-auto grid max-w-7xl items-end gap-10 px-5 pt-14 md:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] lg:px-8">
-        <div className="relative mx-auto aspect-square w-full max-w-md overflow-hidden rounded-t-[3rem]">
+        <div className="relative mx-auto aspect-[4/5] w-full max-w-md overflow-hidden rounded-t-[3rem] bg-brand/20">
           <Image
-            src="/images/zephon-lister.png"
+            src="/images/zephon-lister.webp"
             alt="Portrait of Dr. Zephon Lister"
             fill
             sizes="(min-width: 768px) 40vw, 100vw"
-            className="object-cover"
+            className="object-contain object-bottom"
           />
         </div>
 
